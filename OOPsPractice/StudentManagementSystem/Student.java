@@ -4,20 +4,23 @@ public class Student {
     private int id;
     private String name;
     private int age;
-    private int grade;
+    private int marks;
+    private Course course;
 
     Student(){
         this.id=0;
         this.name="";
         this.age=0;
-        this.grade=0;
+        this.marks=0;
+        this.course=null;
     }
 
-    Student(int id, String name, int age, int grade){
+    Student(int id, String name, int age, int marks, Course course){
         this.id=id;
         this.name=name;
         this.age=age;
-        this.grade=grade;
+        this.marks=marks;
+        this.course=course;
     }
 
     public int getId(){
@@ -44,11 +47,19 @@ public class Student {
         this.age=age;
     }
 
-    public int getGrade(){
-        return grade;
+    public int getMarks(){
+        return marks;
     }
 
-    public void setGrade(int grade){
-        this.grade=grade;
+    public void setMarks(int marks){
+        this.marks=marks;
+    }
+
+    public Course getCourse(){
+        return course;
+    }
+
+    public void setCourse(Course course){
+        this.course=course;
     }
 }
