@@ -22,4 +22,10 @@ public class FullTimeEmployee extends Employee {
     public double calculateBonus(){
         return 0.1*getSalary();
     }
+
+    @Override 
+    public void displayDetails(){
+        super.displayDetails();
+        System.out.println("Employee benefits: "+this.benefits);
+    }
 }
