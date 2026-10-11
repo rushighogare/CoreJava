@@ -13,6 +13,14 @@ public class FullTimeEmployee extends Employee {
         this.benefits=benefits;
     }
 
+    public int getBenefits(){
+        return benefits;
+    }
+
+    public void setBenefits(int benefits){
+        this.benefits=benefits;
+    }
+
     @Override
     public int calculateSalary(){
         return getSalary()+benefits;
@@ -26,6 +34,7 @@ public class FullTimeEmployee extends Employee {
     @Override 
     public void displayDetails(){
         super.displayDetails();
+        System.err.println("Employee salary: "+calculateSalary());
         System.out.println("Employee benefits: "+this.benefits);
     }
 }

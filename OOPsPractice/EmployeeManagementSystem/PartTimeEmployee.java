@@ -44,6 +44,7 @@ public class PartTimeEmployee extends Employee {
     @Override 
     public void displayDetails(){
         super.displayDetails();
+        System.err.println("Employee salary: "+calculateSalary());
         System.out.println("Employee hours worked: "+this.hoursWorked);
         System.out.println("Employee hourly rate: "+this.hourlyRate);
     }

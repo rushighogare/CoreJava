@@ -1,5 +1,7 @@
 package EmployeeManagementSystem;
 
+import java.util.List;
+
 public interface EmployeeService {
     public void addEmployee(Employee employee);
 
@@ -17,5 +19,5 @@ public interface EmployeeService {
 
     public void calculateBonus(int employeeId);
 
-    public void getEmployeesByDepartment(int departmentId);
+    public List<Employee> getEmployeesByDepartment(int departmentId);
 }

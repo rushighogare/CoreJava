@@ -55,11 +55,19 @@ public abstract class Employee {
         this.salary=salary;
     }
 
+    public Department getDepartment(){
+        return department;
+    }
+
+    public void setDepartment(Department department){
+        this.department=department;
+    }
+
     public void displayDetails(){
         System.err.println("Employee id: "+this.employeeId);
         System.err.println("Employee name: "+this.name);
         System.err.println("Employee email: "+this.email);
-        System.err.println("Employee salary: "+this.salary);
+        System.err.println("Employee department: "+this.department.getDepartmentName());
     }
 
     public abstract int calculateSalary();
