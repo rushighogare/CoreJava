@@ -32,7 +32,7 @@ public class PrintedBook extends Book{
     }
 
     @Override 
-    public int calculateLateFee(int days){
+    public int calculateLateFee(){
         return 200;
     }
 

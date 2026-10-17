@@ -71,5 +71,5 @@ public abstract class Book {
         System.out.println("Is book available: "+isAvailable);
     }
 
-    public abstract int calculateLateFee(int days);
+    public abstract int calculateLateFee();
 }

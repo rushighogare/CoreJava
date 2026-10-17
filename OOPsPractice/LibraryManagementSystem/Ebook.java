@@ -4,9 +4,9 @@ public class Ebook extends Book{
     private int fileSize;
     private String fileType;
 
-    public Ebook(int fileSize, String fileType) {
-        this.fileSize = fileSize;
-        this.fileType = fileType;
+    public Ebook() {
+        this.fileSize = 0;
+        this.fileType = "";
     }
 
     public Ebook(int bookId, String title, String author, double price, boolean isAvailable, int fileSize, String fileType) {
@@ -29,7 +29,7 @@ public class Ebook extends Book{
     }
 
     @Override 
-    public int calculateLateFee(int days){
+    public int calculateLateFee(){
         return 0;
     }
 
